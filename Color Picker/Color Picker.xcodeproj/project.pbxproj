@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		176FE32D1FBF93F7004D0833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FE32C1FBF93F7004D0833 /* AppDelegate.swift */; };
-		176FE32F1FBF93F7004D0833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FE32E1FBF93F7004D0833 /* ViewController.swift */; };
 		176FE3321FBF93F7004D0833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176FE3301FBF93F7004D0833 /* Main.storyboard */; };
 		176FE3341FBF93F7004D0833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176FE3331FBF93F7004D0833 /* Assets.xcassets */; };
 		176FE3371FBF93F7004D0833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176FE3351FBF93F7004D0833 /* LaunchScreen.storyboard */; };
+		176FE33F1FBF948A004D0833 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FE33E1FBF948A004D0833 /* ColorPickerViewController.swift */; };
+		176FE3421FBF96EB004D0833 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FE3411FBF96EB004D0833 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		176FE3291FBF93F7004D0833 /* Color Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		176FE32C1FBF93F7004D0833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		176FE32E1FBF93F7004D0833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		176FE3311FBF93F7004D0833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		176FE3331FBF93F7004D0833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		176FE3361FBF93F7004D0833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		176FE3381FBF93F7004D0833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176FE33E1FBF948A004D0833 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		176FE3411FBF96EB004D0833 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		176FE32B1FBF93F7004D0833 /* Color Picker */ = {
 			isa = PBXGroup;
 			children = (
+				176FE3401FBF968B004D0833 /* Model */,
 				176FE32C1FBF93F7004D0833 /* AppDelegate.swift */,
-				176FE32E1FBF93F7004D0833 /* ViewController.swift */,
 				176FE3301FBF93F7004D0833 /* Main.storyboard */,
 				176FE3331FBF93F7004D0833 /* Assets.xcassets */,
 				176FE3351FBF93F7004D0833 /* LaunchScreen.storyboard */,
 				176FE3381FBF93F7004D0833 /* Info.plist */,
+				176FE33E1FBF948A004D0833 /* ColorPickerViewController.swift */,
 			);
 			path = "Color Picker";
+			sourceTree = "<group>";
+		};
+		176FE3401FBF968B004D0833 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				176FE3411FBF96EB004D0833 /* Color.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				176FE32F1FBF93F7004D0833 /* ViewController.swift in Sources */,
+				176FE33F1FBF948A004D0833 /* ColorPickerViewController.swift in Sources */,
 				176FE32D1FBF93F7004D0833 /* AppDelegate.swift in Sources */,
+				176FE3421FBF96EB004D0833 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
